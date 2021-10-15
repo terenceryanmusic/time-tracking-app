@@ -1,0 +1,188 @@
+html {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: hsl(226, 43%, 10%);
+    height: 100vh;
+    color: #f1f1f1;
+    font-family: 'Rubik', sans-serif;
+    font-weight:lighter;
+    font-size: 1.1rem;
+    margin: 0 auto;
+    padding: 2rem;
+    display: grid;
+    justify-content: center;
+}
+
+.main-container {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+
+.container {
+    background-color:hsl(246, 80%, 60%); 
+    width: 250px; 
+    padding: 2rem 1rem;
+    border-radius: 10px;
+}
+
+.blue-container {
+    background-color: hsl(235, 46%, 20%);
+    padding: 2rem 1rem;
+    width: 250px;
+    top: -10px;
+    position: relative;
+    z-index: -1;
+    border-radius: 0 0 10px 10px;
+}
+
+.user {
+    border: 2px solid white;
+    border-radius: 50% 50%;
+}
+
+.left {
+    display: block;
+}
+
+.right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.top-right,
+.btm-right {
+    display: flex;
+    padding-left: 1rem;
+}
+
+.work,
+.play,
+.study,
+.exercise,
+.social,
+.self-care {
+    width: 250px;
+    background-color: hsl(235, 46%, 20%);
+    padding: 1rem;
+    border-radius: 10px;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+    justify-content: space-between;
+    top: -20px;
+    position: relative;
+}
+
+.card {
+    display: grid;
+    
+}
+
+.work-top,
+.play-top,
+.study-top,
+.exercise-top,
+.social-top,
+.self-care-top {
+    width: 250px;
+    height: 3px;
+    padding: 2rem 1rem;
+    border-radius: 10px 10px 0 0;
+}
+
+.work-top {
+    background-color: hsl(15, 100%, 70%);
+}
+
+.play-top {
+     background-color: hsl(195, 74%, 62%);
+}
+
+.study-top {
+    background-color: hsl(348, 100%, 68%);
+}
+
+.exercise-top {
+    background-color: hsl(145, 58%, 55%);
+}
+
+.social-top {
+    background-color: hsl(264, 64%, 52%);
+}
+
+.self-care-top {
+    background-color: hsl(43, 84%, 65%);
+}
+
+.right-align {
+    top: -32px; 
+    left: 180px;
+    position: relative;
+}
+
+.lg-text {
+    font-size: 2rem;
+    font-weight: bold;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+.sml-text {
+    font-size: 0.8rem;
+}
+
+h3 {
+    padding-bottom: 0;
+}
+
+/* 1200px desktops screens */
+@media screen and (max-width: 1200px) {
+    
+    .right {
+        flex-direction: row;
+    }
+
+    .top-right,
+    .btm-right {
+        flex-direction: column;
+    }
+
+    .work,
+    .play,
+    .study,
+    .exercise,
+    .social,
+    .self-care {
+        margin: 0;
+    }
+}
+
+/* 920px tablet & smaller screens */
+@media screen and (max-width: 920px) {
+    
+    .right {
+        flex-direction: column;
+    }
+}
+
+/* 600px mobile devices */
+@media screen and (max-width: 600px) {
+    
+    .main-container {
+        display: block;
+    }
+
+    .left {
+        margin-bottom: 0.5rem;
+    }
+
+    .top-right,
+    .btm-right {
+        padding-left: 0;
+    }
+}
