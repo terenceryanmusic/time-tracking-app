@@ -26,12 +26,12 @@ async function fetchData() {
                       <p class='lg-text'> ${thisWeek}hrs </p>
                       <p class='sml-text'> Last week ${lastWeek}hrs </p>`;
 
-        if(title == 'Work') work = work.innerHTML = output;
-        else if(title == 'Play') play = play.innerHTML = output;
-        else if(title == 'Study') study = study.innerHTML = output;
-        else if(title == 'Exercise') exercise = exercise.innerHTML = output;
-        else if(title == 'Social') social = social.innerHTML = output;
-        else if(title == 'Self Care') selfCare = selfCare.innerHTML = output;
+        if(title == 'Work') work.innerHTML = output;
+        else if(title == 'Play') play.innerHTML = output;
+        else if(title == 'Study') study.innerHTML = output;
+        else if(title == 'Exercise') exercise.innerHTML = output;
+        else if(title == 'Social') social.innerHTML = output;
+        else if(title == 'Self Care') selfCare.innerHTML = output;
     } 
   }
 
